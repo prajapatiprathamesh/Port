@@ -1,0 +1,198 @@
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-image {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+}
+
+.about__img {
+    width: 150px;
+    height: 150px;
+}
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    font-size: smaller;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* About Section */
+  .about__image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__img {
+    width: 200px;
+    height: auto;
+  }
+
+  .about__content {
+    text-align: center;
+    padding: 15px;
+  }
+
+/* Skills Section */
+.skills-grid {
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+  }
+
+.skill-card {
+    text-align: center;
+    font-size: 0.60rem; 
+  }
+
+.skill-icon {
+    max-width: 80px; 
+    height: auto;
+    margin-bottom: 5px; 
+  }
+  .skill-card p {
+    font-size: 0.9rem;
+    color: #d3d3d3;   
+}
+
+ @media screen and (max-width: 480px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .skill-card {
+      text-align: center;
+    }
+  
+    .skill-icon {
+      max-width: 100px;
+      height: auto;
+    }
+
+  .skill-card p {
+    font-size: 0.9rem;
+    color: #d3d3d3; /* Slightly dimmed text color for descriptions */
+  }
+ }
+
+/* Education Section */
+  .education-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .education-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .project-buttons {
+    gap: 8px; /* Adjust gap for smaller screens */
+  }
+
+  .project-buttons .btn {
+    width: auto; 
+    font-size: 14px; 
+    height: auto; 
+  }
+}
+  
+  /* Certificates Section */
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+
+  @media (max-width: 480px) {
+    .contact-buttons {
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 10px; 
+    }
+  
+    .contact-button {
+      width: 100%; 
+      padding: 10px 15px; 
+      font-size: 0.9rem; 
+    }
+  
+    .contact-icon {
+      width: 18px; /* Reduce icon size slightly */
+      height: 18px;
+      margin-right: 8px; /* Adjust spacing between icon and text */
+    }
+  }
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .projects-buttons .btn {
+      padding: 8px 16px; /* Smaller padding */
+      font-size: 14px;  /* Reduced font size */
+      border-radius: 4px; /* Adjusted border radius */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .projects-buttons .btn {
+      padding: 6px 12px; /* Compact padding */
+      font-size: 12px;  /* Further reduced font size */
+      border-radius: 4px; /* Keep it consistent */
+  }
+}
+
+
+.experience-card {
+  flex-direction: column;
+}
+
+.experience-grid {
+  grid-template-columns: 1fr; /* Single column layout for smaller screens */
+}
